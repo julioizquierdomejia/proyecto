@@ -1,0 +1,29 @@
+commit 916ce276f4b4ad8a60c2016e791a62d1acd36b77
+Author: Julio Izquierdo Mejia <julio.izquierdo.mejia@gmail.com>
+Date:   Thu Mar 5 12:07:08 2015 -0500
+
+    Agregue Foto de perfil y puse tamaño
+
+commit f8f1bf0647b020c7450104c28a27db5bfc0df1af
+Author: Julio Izquierdo Mejia <julio.izquierdo.mejia@gmail.com>
+Date:   Thu Mar 5 12:03:47 2015 -0500
+
+    Agregue perfil
+
+commit bdcf8fdc713752d264964271dbd9aa79250eb153
+Author: Julio Izquierdo Mejia <julio.izquierdo.mejia@gmail.com>
+Date:   Thu Mar 5 12:03:02 2015 -0500
+
+    Acabo de agregar mi nombre
+
+commit 7a6a024b3457fbdaf06ee7dc265b056b301c742f
+Author: Julio Izquierdo Mejia <julio.izquierdo.mejia@gmail.com>
+Date:   Thu Mar 5 12:02:06 2015 -0500
+
+    creacion de estructura
+
+commit e0a0e580eaee760861db882eaa9efdfe0d885054
+Author: Julio Izquierdo Mejia <julio.izquierdo.mejia@gmail.com>
+Date:   Thu Mar 5 12:00:11 2015 -0500
+
+    Este es el inicio del proyecto
