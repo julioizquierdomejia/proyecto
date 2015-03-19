@@ -1,28 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="user-scalable=no,initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
 	<title>Mi Proyecto</title>
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+    
+    <script type="text/javascript" src='js/jquery-1.10.1.min.js'></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
 
 </head>
 <body>
-	<div class="menu">
+
+    <div id="fullpage">
+        <div class="section">
+            <div class="menu">
     		<ul>
     			<li><a href="#">Bio</a></li>
     			<li><a href="#">Portafolio</a></li>
     			<li><a href="#">Servicios</a></li>
     			<li><a href="#">Contáctame</a></li>
     		</ul>
-    </div>
-    <div class="todo">
-    	
-        <h1>Julio Izquierdo Mejia - Portafolio</h1>
-        <h2>Developer WEB - Front End</h2>
-        <img src="https://pbs.twimg.com/profile_images/2824058364/8a2a0210287dd79b0ab31ace9401d4e5_400x400.png" width="200" height="200">
-        <h3>Grupo Ingenia SAC</h3>
+            </div>
+            <div class="todo">
+
+                <h1>Julio Izquierdo Mejia - Portafolio</h1>
+                <h2>Developer WEB - Front End</h2>
+                <img src="https://pbs.twimg.com/profile_images/2824058364/8a2a0210287dd79b0ab31ace9401d4e5_400x400.png" width="200" height="200">
+                <h3>Grupo Ingenia SAC</h3>
+            </div>
+        </div>
+        <div class="section">
+            <div class="slide" data-anchor="slide1"> Slide 1 </div>
+            <div class="slide" data-anchor="slide2"> Slide 2 </div>
+            <div class="slide" data-anchor="slide3"> Slide 3 </div>
+            <div class="slide" data-anchor="slide4"> Slide 4 </div>
+        </div>
+        <div class="section">Some section</div>
+        <div class="section">Some section</div>
     </div>
 </body>
 </html>

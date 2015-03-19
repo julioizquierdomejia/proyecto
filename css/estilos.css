@@ -13,7 +13,13 @@ body{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=0 );
     background-attachment: fixed !important;
 }
-h1, h2{
+h1{
+    text-align: center;
+    background-color: #A50F06;
+    height: 100px;
+    line-height: 100px;
+}
+h2{
     text-align: center;
 }
 h3{
@@ -30,7 +36,7 @@ img{
 
 
 .todo {
-    width: 768px;
+    width: 100%;
     height: auto;
     position: absolute;
     top: 50%; 
