@@ -35,7 +35,7 @@ $(document).ready(function(){
         recordHistory: true,
 
         //Design
-        controlArrows: true,
+        controlArrows: false,
         verticalCentered: true,
         resize : false,
         sectionsColor : ['#D20911', '#F9A700', '#0F7AC0', '#5E5C5D'],
