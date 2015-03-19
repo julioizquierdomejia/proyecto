@@ -20,9 +20,9 @@ body{
     background: linear-gradient(#D20911,#A50F06);
 }
 #section1{
-    background: -webkit-gradient(linear, top left, bottom left, from(#69411C), to(#432817));
-    background: -webkit-linear-gradient(#69411C, #432817);
-    background: linear-gradient(#69411C,#432817);
+    background: -webkit-gradient(linear, top left, bottom left, from(#E28800), to(#F5A803));
+    background: -webkit-linear-gradient(#E28800, #F5A803);
+    background: linear-gradient(#E28800,#F5A803);
 }
 #section2{
     background: -webkit-gradient(linear, top left, bottom left, from(#0F7AC0), to(#035692));
@@ -40,7 +40,7 @@ body{
     background-color: #A50F06;
 }
 .hkike{
-    background-color: #432817;
+    background-color: #F5A803;
 }
 .hbrando{
     background-color: #035692;
@@ -72,7 +72,7 @@ img{
     border-radius: 8px;
 }
 .imhK{
-    border:solid 8px #432817;
+    border:solid 8px #E28800;
     border-radius: 8px;
 }
 .imhB{
