@@ -4,10 +4,10 @@ $(document).ready(function(){
     $('#fullpage').fullpage({
         //Navigation
         menu: true,
-        anchors:['primero', 'segundo', 'tercero', 'cuarto'],
+        anchors:['Julio', 'Kikin', 'Brando', 'Adrian'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['Slide1', 'Slide2', 'Slide3', 'Slide4'],
+        navigationTooltips: ['Julio', 'Kikin', 'Brando', 'Adrian'],
         showActiveTooltips: false,
         slidesNavigation: true,
         slidesNavPosition: 'bottom',
@@ -38,7 +38,7 @@ $(document).ready(function(){
         controlArrows: false,
         verticalCentered: true,
         resize : false,
-        sectionsColor : ['#D20911', '#F9A700', '#0F7AC0', '#BCCF00'],
+        sectionsColor : ['#D20911', '#69411C', '#0F7AC0', '#BCCF00'],
         paddingTop: '3em',
         paddingBottom: '10px',
         fixedElements: '#header, .footer',

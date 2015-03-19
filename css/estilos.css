@@ -13,11 +13,34 @@ body{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=0 );
     background-attachment: fixed !important;
 }
+
+#section0{
+    background: -webkit-gradient(linear, top left, bottom left, from(#D20911), to(#A50F06));
+    background: -webkit-linear-gradient(#D20911, #A50F06);
+    background: linear-gradient(#D20911,#A50F06);
+}
+#section1{
+    background: -webkit-gradient(linear, top left, bottom left, from(#69411C), to(#432817));
+    background: -webkit-linear-gradient(#69411C, #432817);
+    background: linear-gradient(#69411C,#432817);
+}
+#section2{
+    background: -webkit-gradient(linear, top left, bottom left, from(#0F7AC0), to(#035692));
+    background: -webkit-linear-gradient(#0F7AC0, #035692);
+    background: linear-gradient(#0F7AC0,#035692);
+}
+#section3{
+    background: -webkit-gradient(linear, top left, bottom left, from(#BCCF00), to(#91A100));
+    background: -webkit-linear-gradient(#BCCF00, #91A100);
+    background: linear-gradient(#BCCF00,#91A100);
+}
+
+
 .hjulio{
     background-color: #A50F06;
 }
 .hkike{
-    background-color: #E38800;
+    background-color: #432817;
 }
 .hbrando{
     background-color: #035692;
@@ -49,7 +72,7 @@ img{
     border-radius: 8px;
 }
 .imhK{
-    border:solid 8px #E38800;
+    border:solid 8px #432817;
     border-radius: 8px;
 }
 .imhB{
@@ -70,3 +93,14 @@ img{
     transform: translate(-50%, -50%);
 }
 
+.right>ul>li>a{
+    color: beige;
+}
+
+
+#header {
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    top: 35px;
+}
