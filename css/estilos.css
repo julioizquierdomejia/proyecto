@@ -13,9 +13,20 @@ body{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=0 );
     background-attachment: fixed !important;
 }
+.hjulio{
+    background-color: #A50F06;
+}
+.hkike{
+    background-color: #E38800;
+}
+.hbrando{
+    background-color: #035692;
+}
+.hadri{
+    background-color: #91A100;
+}
 h1{
     text-align: center;
-    background-color: #A50F06;
     height: 100px;
     line-height: 100px;
 }
@@ -24,7 +35,7 @@ h2{
 }
 h3{
     text-align: center;
-    margin-top: 240px;
+    margin-top: 250px;
 }
 
 img{
@@ -33,7 +44,22 @@ img{
     margin-left: -100px;
 }
 
-
+.imhJ{
+    border:solid 8px #A50F06;
+    border-radius: 8px;
+}
+.imhK{
+    border:solid 8px #E38800;
+    border-radius: 8px;
+}
+.imhB{
+    border:solid 8px #035692;
+    border-radius: 8px;
+}
+.imhA{
+    border:solid 8px #91A100;
+    border-radius: 8px;
+}
 
 .todo {
     width: 100%;
@@ -43,4 +69,4 @@ img{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.todo
+
