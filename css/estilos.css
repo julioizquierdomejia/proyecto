@@ -87,8 +87,8 @@ img{
 .todo {
     width: 100%;
     height: auto;
-    position: absolute;
-    top: 50%; 
+    position: relative;
+    top: 25%; 
     left: 50%;
     transform: translate(-50%, -50%);
 }
