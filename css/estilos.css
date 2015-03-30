@@ -20,9 +20,9 @@ body{
     background: linear-gradient(#D20911,#A50F06);
 }
 #section1{
-    background: -webkit-gradient(linear, top left, bottom left, from(#E28800), to(#F5A803));
-    background: -webkit-linear-gradient(#E28800, #F5A803);
-    background: linear-gradient(#E28800,#F5A803);
+    background: -webkit-gradient(linear, top left, bottom left, from(#F5A803), to(#E28800));
+    background: -webkit-linear-gradient(#F5A803, #E28800);
+    background: linear-gradient(#F5A803,#E28800);
 }
 #section2{
     background: -webkit-gradient(linear, top left, bottom left, from(#0F7AC0), to(#035692));
@@ -40,7 +40,7 @@ body{
     background-color: #A50F06;
 }
 .hkike{
-    background-color: #F5A803;
+    background-color: #E28800;
 }
 .hbrando{
     background-color: #035692;
@@ -102,5 +102,10 @@ img{
     position: absolute;
     left: 50%;
     margin-left: -10px;
-    top: 35px;
+    top: -15px;
+}
+#header>img{
+    background-color: #A50F06;
+    padding: 33px 0 13px 0;
+    border-radius: 12px;
 }

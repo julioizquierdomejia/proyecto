@@ -1,6 +1,6 @@
-var demo=0;
+var colores=['#A50F06','#E28800','#035692','#91A100'];
 $(document).ready(function(){
-        console.log("START");
+        
     $('#fullpage').fullpage({
         //Navigation
         menu: true,
@@ -49,11 +49,27 @@ $(document).ready(function(){
         slideSelector: '.slide',
 
         //events
-        onLeave: function(index, nextIndex, direction){},
-        afterLoad: function(anchorLink, index){},
-        afterRender: function(){},
+        onLeave: function(index, nextIndex, direction){
+            console.log("onLeave -> "+nextIndex);
+            pintaColorLogo(nextIndex);
+        },
+        afterLoad: function(anchorLink, index){
+            console.log("afterLoad");
+        },
+        afterRender: function(){
+            console.log("afterRender");
+        },
         afterResize: function(){},
-        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
-        onSlideLeave: function(anchorLink, index, slideIndex, direction){}
+        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
+            console.log("afterSlideLoad");
+        },
+        onSlideLeave: function(anchorLink, index, slideIndex, direction){
+            console.log("onSlideLeave");
+        }
     });
+    
+    function pintaColorLogo(ind){
+        TweenMax.to($('#header img'), 1, {css:{'backgroundColor':colores[ind-1]}, delay:0.3, ease:Expo.easeOut});
+    }
+    
 });
