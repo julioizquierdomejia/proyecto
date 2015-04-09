@@ -116,10 +116,11 @@ img{
     position: relative;
     width: 150px;
     height: 150px;
-    margin: 10px 5px;
+    margin: 10px 9px;
     left: 0;
     border:solid 6px #91A100;
     border-radius: 6px;
+    opacity: 0.5;
 }
 
 .galeria {

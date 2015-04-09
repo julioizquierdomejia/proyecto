@@ -72,4 +72,17 @@ $(document).ready(function(){
         TweenMax.to($('#header img'), 1, {css:{'backgroundColor':colores[ind-1]}, delay:0.3, ease:Expo.easeOut});
     }
     
+    
+    $('.gal').hover(function(){   
+        document.body.style.cursor='pointer'; 
+        TweenMax.to($(this), 0.4, {opacity:1, scale:1.1, ease:Power3.easeOut});
+    }, function(){    
+        document.body.style.cursor='default';   
+        TweenMax.to($(this), 0.4, {opacity:0.5, scale:1, ease:Power3.easeOut});
+    })
+    $('.gal').click(function() {
+        //
+    });
+    
+    
 });
