@@ -86,11 +86,12 @@ img{
 
 .todo {
     width: 100%;
-    height: auto;
+    height: 600px;
     position: relative;
     top: 25%; 
     left: 50%;
-    transform: translate(-50%, -50%);
+    margin-left: -50%;
+        margin-top: -300px;
 }
 
 .right>ul>li>a{
@@ -108,4 +109,23 @@ img{
     background-color: #A50F06;
     padding: 33px 0 13px 0;
     border-radius: 12px;
+}
+
+.gal {
+    float: left;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 10px 5px;
+    left: 0;
+    border:solid 6px #91A100;
+    border-radius: 6px;
+}
+
+.galeria {
+    position: absolute;
+    float: left;
+    width: 900px;
+    left: 50%;
+    margin-left: -450px;
 }
