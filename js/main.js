@@ -50,37 +50,39 @@ $(document).ready(function(){
 
         //events
         onLeave: function(index, nextIndex, direction){
-            console.log("onLeave -> "+nextIndex);
+            //console.log("onLeave -> "+nextIndex);
             pintaColorLogo(nextIndex);
         },
         afterLoad: function(anchorLink, index){
-            console.log("afterLoad");
+            //console.log("afterLoad");
         },
         afterRender: function(){
-            console.log("afterRender");
+//            console.log("afterRender");
         },
         afterResize: function(){},
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
-            console.log("afterSlideLoad");
+//            console.log("afterSlideLoad");
         },
         onSlideLeave: function(anchorLink, index, slideIndex, direction){
-            console.log("onSlideLeave");
-            animaThumbs(10,index);
+//            console.log("onSlideLeave");
+            animaThumbs(10,index,slideIndex);
         }
     });
     
     function pintaColorLogo(ind){
         TweenMax.to($('#header img'), 1, {css:{'backgroundColor':colores[ind-1]}, delay:0.3, ease:Expo.easeOut});
+        TweenMax.to($('.gal'), 0, {css:{'border-color':colores[ind-1]}, delay:0.5, ease:Expo.easeOut});
     }
     
-    function animaThumbs(cant,ind){
-        console.log();
-        $('.gal').css('border-color',colores[ind-1]);
-        var tiempo=0.1;
-        for(var i=0;i<=9;i++){
-            TweenMax.to($('#g'+(i+1)), 0, {opacity:1, scale:0});
-            TweenMax.to($('#g'+(i+1)), 0.5, {opacity:0.7, scale:1, delay: tiempo+0.3, ease:Back.easeOut});
-            tiempo += 0.1;
+    function animaThumbs(cant,ind,sldInd){
+        if(sldInd==1){
+            console.log("ENTRO A ANIMAR: "+ind);
+            var tiempo=0.1;
+            for(var i=0;i<=9;i++){
+//                TweenMax.to($('#g'+(i+1)), 0, {opacity:1, scale:0});
+                TweenMax.to($('#g'+(i+1)), 0.5, {opacity:0.7, scale:1, delay: tiempo+0.3, ease:Back.easeOut});
+                tiempo += 0.1;
+            }
         }
         
     }
