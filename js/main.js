@@ -62,10 +62,10 @@ $(document).ready(function(){
         afterResize: function(){},
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
             console.log("afterSlideLoad");
-            //animaThumbs(10);
         },
         onSlideLeave: function(anchorLink, index, slideIndex, direction){
             console.log("onSlideLeave");
+            animaThumbs(10);
         }
     });
     
@@ -74,19 +74,13 @@ $(document).ready(function(){
     }
     
     function animaThumbs(cant){
-        var tiempo = 0;
-        var bounce = new Bounce();
-        bounce.scale({
-            from: { x: 0.5, y: 0.5 },
-            to: { x: 1, y: 1 },
-            duration:1000,
-            delay:tiempo+10
-        });
-        
-        for(var i=1; i<=cant; i++){
-            bounce.applyTo($("#g"+i));
-            tiempo += 20;
+        var tiempo=0.1;
+        for(var i=0;i<=9;i++){
+            TweenMax.to($('#g'+(i+1)), 0, {opacity:1, scale:0});
+            TweenMax.to($('#g'+(i+1)), 0.5, {opacity:0.5, scale:1, delay: tiempo+0.3, ease:Back.easeOut});
+            tiempo += 0.1;
         }
+        
     }
     
     $('.gal').hover(function(){   
