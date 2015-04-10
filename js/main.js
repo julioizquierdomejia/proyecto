@@ -62,6 +62,7 @@ $(document).ready(function(){
         afterResize: function(){},
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
             console.log("afterSlideLoad");
+            //animaThumbs(10);
         },
         onSlideLeave: function(anchorLink, index, slideIndex, direction){
             console.log("onSlideLeave");
@@ -72,6 +73,21 @@ $(document).ready(function(){
         TweenMax.to($('#header img'), 1, {css:{'backgroundColor':colores[ind-1]}, delay:0.3, ease:Expo.easeOut});
     }
     
+    function animaThumbs(cant){
+        var tiempo = 0;
+        var bounce = new Bounce();
+        bounce.scale({
+            from: { x: 0.5, y: 0.5 },
+            to: { x: 1, y: 1 },
+            duration:1000,
+            delay:tiempo+10
+        });
+        
+        for(var i=1; i<=cant; i++){
+            bounce.applyTo($("#g"+i));
+            tiempo += 20;
+        }
+    }
     
     $('.gal').hover(function(){   
         document.body.style.cursor='pointer'; 
