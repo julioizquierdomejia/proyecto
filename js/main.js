@@ -65,7 +65,7 @@ $(document).ready(function(){
         },
         onSlideLeave: function(anchorLink, index, slideIndex, direction){
             console.log("onSlideLeave");
-            animaThumbs(10);
+            animaThumbs(10,index);
         }
     });
     
@@ -73,7 +73,9 @@ $(document).ready(function(){
         TweenMax.to($('#header img'), 1, {css:{'backgroundColor':colores[ind-1]}, delay:0.3, ease:Expo.easeOut});
     }
     
-    function animaThumbs(cant){
+    function animaThumbs(cant,ind){
+        console.log();
+        $('.gal').css('border-color',colores[ind-1]);
         var tiempo=0.1;
         for(var i=0;i<=9;i++){
             TweenMax.to($('#g'+(i+1)), 0, {opacity:1, scale:0});
