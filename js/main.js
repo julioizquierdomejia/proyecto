@@ -50,7 +50,7 @@ $(document).ready(function(){
 
         //events
         onLeave: function(index, nextIndex, direction){
-            //console.log("onLeave -> "+nextIndex);
+            console.log("onLeave -> "+nextIndex);
             pintaColorLogo(nextIndex);
         },
         afterLoad: function(anchorLink, index){
@@ -61,31 +61,41 @@ $(document).ready(function(){
         },
         afterResize: function(){},
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
-//            console.log("afterSlideLoad");
+            console.log("afterSlideLoad "+slideAnchor);
+            animaThumbs(10,index,slideAnchor);
+
         },
         onSlideLeave: function(anchorLink, index, slideIndex, direction){
-//            console.log("onSlideLeave");
-            animaThumbs(10,index,slideIndex);
+            console.log("onSlideLeave");
+            seteaImgs(10,index);
         }
     });
     
+    function seteaImgs(cant,ind){
+        for(var i=0;i<=9;i++){
+            TweenMax.to($('#section'+(ind-1)).find('#g'+(i+1)), 0, {opacity:1, scale:0});
+        }
+    }
+    
     function pintaColorLogo(ind){
+        console.log('pintaColor');
         TweenMax.to($('#header img'), 1, {css:{'backgroundColor':colores[ind-1]}, delay:0.3, ease:Expo.easeOut});
-        TweenMax.to($('.gal'), 0, {css:{'border-color':colores[ind-1]}, delay:0.5, ease:Expo.easeOut});
+        TweenMax.to($('#section'+(ind-1)).find('.gal'), 0, {css:{'border-color':colores[ind-1]}, delay:0.3, ease:Expo.easeOut});
     }
     
     function animaThumbs(cant,ind,sldInd){
-        if(sldInd==1){
-            console.log("ENTRO A ANIMAR: "+ind);
-            var tiempo=0.1;
+        console.log("ENTRO A ANIMAR: "+sldInd);
+        if(sldInd=='slide3'){
+            var tiempo=0;
             for(var i=0;i<=9;i++){
-//                TweenMax.to($('#g'+(i+1)), 0, {opacity:1, scale:0});
-                TweenMax.to($('#g'+(i+1)), 0.5, {opacity:0.7, scale:1, delay: tiempo+0.3, ease:Back.easeOut});
+//                TweenMax.to($('#section'+(ind-1)).find('#g'+(i+1)), 0, {opacity:1, scale:0});
+                TweenMax.to($('#section'+(ind-1)).find('#g'+(i+1)), 0.4, {opacity:0.7, scale:1, delay: tiempo, ease:Back.easeOut});
                 tiempo += 0.1;
             }
         }
-        
     }
+    
+    pintaColorLogo(1);
     
     $('.gal').hover(function(){   
         document.body.style.cursor='pointer'; 
