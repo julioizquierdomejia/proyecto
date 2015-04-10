@@ -130,3 +130,14 @@ img{
     left: 50%;
     margin-left: -450px;
 }
+
+.bio {
+    width: 600px;
+    left: 50%;
+    overflow: auto;
+    position: absolute !important;
+    height: 200px;
+    box-sizing: border-box;
+    text-align: justify;
+    margin: 80px 0px 0px -100px !important;
+}

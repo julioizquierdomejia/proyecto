@@ -77,7 +77,7 @@ $(document).ready(function(){
         var tiempo=0.1;
         for(var i=0;i<=9;i++){
             TweenMax.to($('#g'+(i+1)), 0, {opacity:1, scale:0});
-            TweenMax.to($('#g'+(i+1)), 0.5, {opacity:0.5, scale:1, delay: tiempo+0.3, ease:Back.easeOut});
+            TweenMax.to($('#g'+(i+1)), 0.5, {opacity:0.7, scale:1, delay: tiempo+0.3, ease:Back.easeOut});
             tiempo += 0.1;
         }
         
