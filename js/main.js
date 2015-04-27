@@ -1,4 +1,5 @@
 var colores=['#A50F06','#E28800','#035692','#91A100'];
+var coloresClaros=['#D10911','#F4A703','#0F79BF','#BBCE00'];
 $(document).ready(function(){
         
     $('#fullpage').fullpage({
@@ -81,6 +82,9 @@ $(document).ready(function(){
         console.log('pintaColor');
         TweenMax.to($('#header img'), 1, {css:{'backgroundColor':colores[ind-1]}, delay:0.3, ease:Expo.easeOut});
         TweenMax.to($('#section'+(ind-1)).find('.gal'), 0, {css:{'border-color':colores[ind-1]}, delay:0.3, ease:Expo.easeOut});
+        
+        $('.fp-slidesNav ul li a span').css('background',coloresClaros[ind-1]);
+        $('#fp-nav ul li a span').css('background',colores[ind-1]);
     }
     
     function animaThumbs(cant,ind,sldInd){
